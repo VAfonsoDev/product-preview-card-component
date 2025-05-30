@@ -1,0 +1,126 @@
+.fraunces {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-variation-settings: "wght" 700, "opsz" 36, "WONK" 1;
+}
+
+body {
+  background-color: rgb(243, 233, 227);
+}
+
+.background {
+  margin: 28px 16px;
+}
+
+.main-button {
+  background-color: hsl(158, 36%, 37%);
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  min-height: 48px;
+  width: 100%;
+  border-radius: 4px;
+  transition: 300ms all ease-in-out;
+  display: flex;
+  align-items: anchor-center;
+  justify-content: center;
+  cursor: pointer;
+  border: 0;
+}
+.main-button .icon-cart {
+  display: inline-block;
+  margin-right: 10px;
+}
+.main-button .icon-cart::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("images/icon-cart.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-button .button-text {
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  font-weight: 700;
+}
+.main-button:hover {
+  background-color: hsl(158, 42%, 18%);
+}
+
+.product {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+@media (min-width: 980px) {
+  .product {
+    display: flex;
+    max-width: 600px;
+  }
+}
+.product__image {
+  position: relative;
+  padding-bottom: 240px;
+}
+@media (min-width: 980px) {
+  .product__image {
+    width: 50%;
+  }
+}
+.product__image img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+}
+.product__info {
+  margin: 28px 24px 24px 24px;
+}
+@media (min-width: 980px) {
+  .product__info {
+    width: 50%;
+    margin: 35px 32px 32px 32px;
+    align-content: center;
+  }
+}
+.product__info .info__category {
+  display: block;
+  color: hsl(228, 12%, 48%);
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 18px;
+}
+.product__info .info__title {
+  color: hsl(212, 21%, 14%);
+  font-size: 30px;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+.product__info .info__description {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 24px;
+}
+.product__info .info__price {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.product__info .info__price .new-price {
+  color: hsl(158, 42%, 18%);
+  font-size: 30px;
+}
+.product__info .info__price .old-price {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  text-decoration: line-through;
+}/*# sourceMappingURL=style.css.map */
